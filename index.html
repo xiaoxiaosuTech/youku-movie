@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>$Title$</title>
     <link href="style/index.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-<body>
-<div id=“container”>
-    <div id="app">
-        <div class="item-1"></div>
-        <div id="swiperBackImg"/>
-    </div>
-</div>
 
-</body>
+    <body>
+        <div id=“container”>
+            <div id="app">
+                <div class="item-1"></div>
+                <div id="swiperBackImg">
+                    <div class="slide_tab">
+                        <div class="product_box slide">
+                            <ul id="ulpadding">
+                                <li>
+                                    <img src="./images/swiperBack.png" data-src="./images/swiperBack.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/swiperBack.png" data-src="./images/swiperBack.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="swiperbutton" id="btn_left" src='./images/right.png'>
+                    <img class="swiperbutton" id="btn_right" src='./images/right.png'>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery-2.2.4.min.js"></script>
+        <script src="./js/swipeSlide.min.js"></script>
+        <script>
+            $(function () {
+                var slideTab = $('.slide_tab .slide').swipeSlide({
+                    continuousScroll: true,
+                    autoSwipe: false,
+                    lazyLoad: true,
+                    firstCallback: function (i) {
+                        $('.slide_tab .tab .item').eq(i).addClass('cur');
+                    },
+                    callback: function (i) {
+                        $('.slide_tab .tab .item').eq(i).addClass('cur').siblings().removeClass('cur');
+                    }
+                });
+                $('#btn_left').on('click', function (i) {
+                    slideTab[0].goTo('prev');
+                });
+                $('#btn_right').on('click', function (i) {
+                    slideTab[0].goTo('next');
+                });
+            });
+
+        </script>
+    </body>
+
 </html>
