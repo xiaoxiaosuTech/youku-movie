@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 
 <body>
-<div id=“container”>
+<div id=“containerS”>
+    <div id="appBox">
     <div id="app">
         <div class="item-1">
             <div style="margin-top:20px;">
@@ -112,6 +113,7 @@
             <img class="swiperbutton" id="btn_right3" src='./images/right.png'>
         </div>
     </div>
+    </div>
 </div>
 <script src="./js/jquery-2.2.4.min.js"></script>
 <script src="./js/swipeSlide.min.js"></script>
@@ -135,6 +137,9 @@
             slideTab[0].goTo('next');
         });
     });
+$('body').on('touchmove',function(event){event.preventDefault();});
+$('#appBox').height(document.documentElement.clientHeight+'px')
+
 
 </script>
 <script>

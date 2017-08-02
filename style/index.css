@@ -8,9 +8,14 @@ body {
   overflow: hidden;
   overflow-y: auto;
 }
-#container {
-  position: relative;
+#containerS {
   overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+#appBox {
+  overflow: hidden;
+  width: 100%;
 }
 #app {
   position: absolute;
@@ -21,6 +26,7 @@ body {
   background: url("../images/background.jpg") no-repeat top center;
   background-size: auto 100%;
   text-align: center;
+  overflow: hidden;
 }
 .item-1 div {
   padding-top: 100px;
