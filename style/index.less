@@ -12,7 +12,7 @@ html,body{
   right: 0;
   bottom: 0;
   background: url("../images/background.jpg") no-repeat top center;
-  background-size: contain;
+  background-size: 100%;
   text-align:center;
 }
 .item-1{
@@ -22,12 +22,12 @@ html,body{
 #swiperBackImg{
   left: 50%;
   bottom: 50px;
-  height: 500px;
-  width: 100%;
-  margin-left: -50%;
+  height: 274px;
+  width: 762px;
+  margin-left: -381px;
   background: url("../images/swiperBack.png") no-repeat top center;
 	background-size:contain;
-  position: absolute;
+  position: fixed;
 }
 .swiperbutton{
   height: 40px;
@@ -36,13 +36,13 @@ html,body{
   top: 50%;
   right: 25%;
 }
-#leftButton{
+#btn_left{
     left: 25%;
-  transform:rotate(180deg);
-  -ms-transform:rotate(180deg); 	/* IE 9 */
-  -moz-transform:rotate(180deg); 	/* Firefox */
-  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
-  -o-transform:rotate(180deg); 	/* Opera */
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
 }
 
 
@@ -56,7 +56,7 @@ html,body{
     content: '';
     display: block;
     width: 100%;
-    padding-top: 50%;
+    padding-top: 100%;
 }
 .slide ul{
     position: absolute;
@@ -74,17 +74,17 @@ html,body{
     height: 100%;
 }
 .slide_tab{
-  width: 36.5%;
-  height: 35%;
-  border-radius:8px;
-  -moz-border-radius:8px; /* 老的 Firefox */
+  width: 256px;
+  height: 121.5px;
+  border-radius:10px;
+  -moz-border-radius:10px; /* 老的 Firefox */
   position: absolute;
   left: 50%;
-  top: 205px;
-  margin-top:-17.5%;
+  top: 50%;
+  margin-top:-22px;
   overflow: hidden;
   -webkit-transform:rotate(0deg);
-  margin-left: -18%;
+  margin-left: -126px;
 }
 .slide_tab .tab_box{
 
@@ -123,7 +123,6 @@ html,body{
     border-left: 1px solid #ccc;
 }
 .slide_tab .product_box:after{
-    padding-top: 100%;
 }
 .slide_tab .product_box li:after{
     content:'';
@@ -151,3 +150,9 @@ html,body{
     margin: 0;
   }
 
+.palybutton{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -75px;
+}
