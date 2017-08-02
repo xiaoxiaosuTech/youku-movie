@@ -124,7 +124,6 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0;
-  border-left: 1px solid #ccc;
 }
 .slide_tab .product_box li:after {
   content: '';
