@@ -24,17 +24,94 @@
                     <ul id="ulpadding">
                         <li>
                             <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
-                            <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>
+                            <a href="https://www.google.com/">
+                                <img class="palybutton"  width="150px" height="116px" src='./images/playButton.png'>
+                            </a>
                         </li>
                         <li>
                             <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
-                            <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
                         </li>
                     </ul>
                 </div>
             </div>
             <img class="swiperbutton" id="btn_left" src='./images/right.png'>
             <img class="swiperbutton" id="btn_right" src='./images/right.png'>
+        </div>
+        <div id="swiperBackImg1">
+            <div class="slide_tab1">
+                <div class="product_box slide">
+                    <ul id="ulpadding">
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="swiperbutton" id="btn_left1" src='./images/right.png'>
+            <img class="swiperbutton" id="btn_right1" src='./images/right.png'>
+        </div>
+        <div id="swiperBackImg2">
+            <div class="slide_tab2">
+                <div class="product_box slide">
+                    <ul id="ulpadding">
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="swiperbutton" id="btn_left2" src='./images/right.png'>
+            <img class="swiperbutton" id="btn_right2" src='./images/right.png'>
+        </div>
+        <div id="swiperBackImg3">
+            <div class="slide_tab3">
+                <div class="product_box slide">
+                    <ul id="ulpadding">
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <img width="100%" height="100%" src="./images/qqq.png" data-src="./images/qqq.png" alt="">
+                            <a href="https://www.google.com">
+                        <img class="palybutton" width="150px" height="116px" src='./images/playButton.png'>         
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="swiperbutton" id="btn_left3" src='./images/right.png'>
+            <img class="swiperbutton" id="btn_right3" src='./images/right.png'>
         </div>
     </div>
 </div>
@@ -58,6 +135,72 @@
         });
         $('#btn_right').on('click', function (i) {
             slideTab[0].goTo('next');
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        var slideTab1 = $('.slide_tab1 .slide').swipeSlide({
+            continuousScroll: true,
+            autoSwipe: false,
+            lazyLoad: true,
+            firstCallback: function (i) {
+                $('.slide_tab1 .tab .item').eq(i).addClass('cur');
+            },
+            callback: function (i) {
+                $('.slide_tab1 .tab .item').eq(i).addClass('cur').siblings().removeClass('cur');
+            }
+        });
+        $('#btn_left1').on('click', function (i) {
+            slideTab1[0].goTo('prev');
+        });
+        $('#btn_right1').on('click', function (i) {
+            slideTab1[0].goTo('next');
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        var slideTab1 = $('.slide_tab2 .slide').swipeSlide({
+            continuousScroll: true,
+            autoSwipe: false,
+            lazyLoad: true,
+            firstCallback: function (i) {
+                $('.slide_tab2 .tab .item').eq(i).addClass('cur');
+            },
+            callback: function (i) {
+                $('.slide_tab2 .tab .item').eq(i).addClass('cur').siblings().removeClass('cur');
+            }
+        });
+        $('#btn_left2').on('click', function (i) {
+            slideTab1[0].goTo('prev');
+        });
+        $('#btn_right2').on('click', function (i) {
+            slideTab1[0].goTo('next');
+        });
+    });
+
+</script>
+<script>
+    $(function () {
+        var slideTab1 = $('.slide_tab3 .slide').swipeSlide({
+            continuousScroll: true,
+            autoSwipe: false,
+            lazyLoad: true,
+            firstCallback: function (i) {
+                $('.slide_tab3 .tab .item').eq(i).addClass('cur');
+            },
+            callback: function (i) {
+                $('.slide_tab3 .tab .item').eq(i).addClass('cur').siblings().removeClass('cur');
+            }
+        });
+        $('#btn_left3').on('click', function (i) {
+            slideTab1[0].goTo('prev');
+        });
+        $('#btn_right3').on('click', function (i) {
+            slideTab1[0].goTo('next');
         });
     });
 
