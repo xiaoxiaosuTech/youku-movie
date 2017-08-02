@@ -3,6 +3,11 @@ body {
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
 #container {
   position: relative;
 }
@@ -23,7 +28,7 @@ body {
   left: 50%;
   top: 350px;
   height: 274px;
-  width: 360px;
+  width: 762px;
   margin-left: -381px;
   background: url("../images/swiperBack.png") no-repeat top center;
   background-size: contain;
@@ -33,17 +38,21 @@ body {
   left: 50%;
   top: 624px;
   height: 274px;
-  width: 360px;
+  width: 762px;
   margin-left: -381px;
   background: url("../images/swiperBack.png") no-repeat top center;
   background-size: contain;
   position: absolute;
 }
+#appbox {
+  overflow-x: hidden;
+  height: 1446px;
+}
 #swiperBackImg2 {
   left: 50%;
   top: 898px;
   height: 274px;
-  width: 360px;
+  width: 762px;
   margin-left: -381px;
   background: url("../images/swiperBack.png") no-repeat top center;
   background-size: contain;
@@ -53,7 +62,7 @@ body {
   left: 50%;
   top: 1172px;
   height: 274px;
-  width: 360px;
+  width: 762px;
   margin-left: -381px;
   background: url("../images/swiperBack.png") no-repeat top center;
   background-size: contain;
